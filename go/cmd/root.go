@@ -51,20 +51,12 @@ func addCmd(day int, part1, part2 solver) {
 			part := args[0]
 			switch part {
 			case "1":
-				if part1 == nil {
-					return fmt.Errorf("part 1 not yet implemented for day %d", day)
-				}
-
 				result, err := part1(scanner)
 				if err != nil {
 					return err
 				}
 				fmt.Printf("Day %d part 1: %s\n", day, result)
 			case "2":
-				if part2 == nil {
-					return fmt.Errorf("part 2 not yet implemented for day %d", day)
-				}
-
 				result, err := part2(scanner)
 				if err != nil {
 					return err
